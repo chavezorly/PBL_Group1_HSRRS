@@ -1,0 +1,11 @@
+
+
+
+
+SELECT tick_description WHERE ticket_type_id = '1', COUNT(ticket_type_id) as COUNT FROM ticket GROUP BY tick_description ORDER BY COUNT DESC LIMIT 3;
+
+SELECT tick_description, COUNT(ticket_type_id) as COUNT FROM ticket WHERE ticket_type_id = 2 GROUP BY tick_description ORDER BY COUNT DESC LIMIT 3;
+
+SELECT tick_description, COUNT(ticket_type_id) as COUNT FROM ticket WHERE ticket_type_id = 3 GROUP BY tick_description ORDER BY COUNT DESC LIMIT 3;
+
+SELECT tick_description, COUNT(ticket_type_id) as COUNT FROM ticket WHERE ticket_type_id = 4 GROUP BY tick_description ORDER BY COUNT DESC LIMIT 3;
